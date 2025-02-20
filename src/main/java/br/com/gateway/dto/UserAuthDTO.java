@@ -19,4 +19,6 @@ public class UserAuthDTO {
     private UserType userType;
 
     private String accessToken;
+
+    private UUID accountIdentifier;
 }
