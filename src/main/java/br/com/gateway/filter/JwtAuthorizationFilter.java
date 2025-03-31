@@ -62,6 +62,10 @@ public class JwtAuthorizationFilter implements WebFilter {
         String path = exchange.getRequest().getPath().toString();
         HttpMethod method =  exchange.getRequest().getMethod();
 
+        if (HttpMethod.OPTIONS.name().equals(exchange.getRequest().getMethod().name())) {
+            return chain.filter(exchange);
+        }
+
         // Verifica se é rota publica
 
         if (isPublicRoute(path, method) || isPublicRouteWithUUID(path, method)) {
