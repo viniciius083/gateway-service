@@ -6,7 +6,7 @@
     <groupId>br.com.gateway</groupId>
     <artifactId>api-gateway</artifactId>
     <version>1.0.0</version>
-    <name>API Gateway</name>
+    <name>gateway-service</name>
     <description>Projeto de Gateway com Spring Cloud</description>
     <packaging>jar</packaging>
 
@@ -72,6 +72,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>br.com.exceptions</groupId>
+            <artifactId>exceptions-service</artifactId>
+            <version>1.1.0</version>
         </dependency>
     </dependencies>
 
