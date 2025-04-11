@@ -43,6 +43,7 @@ public class JwtAuthorizationFilter implements WebFilter {
             "/users/auth", Set.of(HttpMethod.POST),
             "/users/register", Set.of(HttpMethod.POST),
             "/v1/menu", Set.of(HttpMethod.GET),
+            "//accounts", Set.of(HttpMethod.POST),
             "/v1/category", Set.of(HttpMethod.GET),
             "/v1/customer", Set.of(HttpMethod.POST),
             "/v1/customer/phone/", Set.of(HttpMethod.GET),
@@ -83,6 +84,11 @@ public class JwtAuthorizationFilter implements WebFilter {
         try {
             UserAuthDTO userAuthDTO = userServiceClient.validateTokenAndRole("Bearer "+ token.replace("Bearer ", ""));
             log.info(" Token válido para usuário do tipo: {}", userAuthDTO.getUserType());
+
+//            if (userAuthDTO.getUserType() == UserType.ADMIN) {
+//                return chain.filter(exchange);
+//            }
+
 
             // Verificar permissões
             if (routePermissionsConfig.isAdminRoute(path) && userAuthDTO.getUserType() != UserType.ADMIN) {
