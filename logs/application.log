@@ -1,0 +1,32 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2025-04-11T05:05:36.925Z  INFO 307396 --- [           main] br.com.gateway.GatewayApplication        : Starting GatewayApplication v1.0.0 using Java 21.0.6 with PID 307396 (/root/repos/gateway-service/target/api-gateway-1.0.0.jar started by root in /root/repos/gateway-service)
+2025-04-11T05:05:36.931Z  INFO 307396 --- [           main] br.com.gateway.GatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T05:05:42.063Z  INFO 307396 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c241ebe3-3f04-3544-82f7-5f4c2fc8a315
+2025-04-11T05:05:42.335Z  INFO 307396 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.gateway.client.UserServiceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-11T05:05:46.731Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-04-11T05:05:46.731Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-04-11T05:05:46.731Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-04-11T05:05:46.731Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-04-11T05:05:46.732Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-04-11T05:05:46.733Z  INFO 307396 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-04-11T05:05:47.981Z DEBUG 307396 --- [           main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-11T05:05:48.183Z DEBUG 307396 --- [           main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2025-04-11T05:05:48.294Z DEBUG 307396 --- [           main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-11T05:05:49.520Z  INFO 307396 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2025-04-11T05:05:49.620Z  INFO 307396 --- [           main] br.com.gateway.GatewayApplication        : Started GatewayApplication in 15.169 seconds (process running for 17.872)
